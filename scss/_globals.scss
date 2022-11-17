@@ -10,3 +10,17 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+.wrapper {
+  background-color: $white;
+  width: auto;
+  height: auto;
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+.fade {
+  visibility: hidden;
+}

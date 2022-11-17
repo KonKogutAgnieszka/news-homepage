@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: block;
+  height: 28px;
+}
+
+.hamburger {
+  > span {
+    display: block;
+    background-color: $black;
+    width: 40px;
+    height: 3px;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+}

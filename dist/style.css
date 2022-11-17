@@ -14,3 +14,51 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+
+.wrapper {
+  background-color: hsl(36deg, 100%, 99%);
+  width: auto;
+  height: auto;
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+.fade {
+  visibility: hidden;
+}
+
+.header {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  display: block;
+  height: 28px;
+}
+
+.hamburger > span {
+  display: block;
+  background-color: #0a0722;
+  width: 40px;
+  height: 3px;
+}
+.hamburger > span:not(:last-child) {
+  margin-bottom: 4px;
+}
