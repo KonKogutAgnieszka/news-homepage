@@ -8,13 +8,16 @@ html {
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
 .wrapper {
   background-color: $white;
-  width: auto;
+  width: 100%;
   height: auto;
+  padding: 16px;
 }
 
 .hide-for-mobile {
