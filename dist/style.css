@@ -54,6 +54,9 @@ nav {
   height: 28px;
 }
 
+.hamburger {
+  z-index: 10;
+}
 .hamburger > span {
   display: block;
   background-color: #0a0722;
@@ -62,6 +65,32 @@ nav {
 }
 .hamburger > span:not(:last-child) {
   margin-bottom: 4px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 70vw;
+  background-color: hsl(36deg, 100%, 99%);
+}
+.overlay__links {
+  margin: 9rem 0 9rem 1.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.overlay__links > a {
+  font-size: 0.938rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0a0722;
+  line-height: 2.5rem;
 }
 
 .new {
