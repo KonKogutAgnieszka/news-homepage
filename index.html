@@ -20,22 +20,11 @@
     />
 
     <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="dist/style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="overlay hide-for-mobile">
+      <div class="overlay fade">
         <div class="overlay__links">
         <a href="#">Home</a>
         <a href="#new">New</a>
@@ -48,22 +37,14 @@
         <nav>
           <img class="header__logo" src="assets/images/logo.svg" alt="" />
 
-          <div class="header__links hide-for-mobile">
-            <a href="#">Home</a>
-            <a href="#new">New</a>
-            <a href="#popular">Popular</a>
-            <a href="#trending">Trending</a>
-            <a href="#">Categories</a>
-          </div>
-
-          <a href="" class="hamburger">
+          <a href="#" class="hamburger hide-for-desktop">
             <span></span>
             <span></span>
             <span></span>
           </a>
         </nav>
 
-        <div class="header__links fade">
+        <div class="header__links hide-for-mobile">
           <a href="#">Home</a>
           <a href="#new">New</a>
           <a href="#popular">Popular</a>
@@ -163,5 +144,7 @@
         >. Coded by <a href="#">Agnieszka Koń Kogut</a>.
       </footer>
     </div>
+    
+    <script type="text/javascript" src="app/main.js"></script>
   </body>
 </html>

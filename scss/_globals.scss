@@ -24,6 +24,9 @@ html {
   display: none;
 }
 
+.hide-for-desktop {
+}
+
 .fade {
-  visibility: hidden;
+  transform: translate(100%);
 }

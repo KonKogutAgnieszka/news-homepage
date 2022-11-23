@@ -2,5 +2,9 @@ footer {
   .attribution {
     font-size: $font-xs;
     text-decoration: none;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
   }
 }

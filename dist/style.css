@@ -29,7 +29,9 @@ html {
 }
 
 .fade {
-  visibility: hidden;
+  -webkit-transform: translate(100%);
+      -ms-transform: translate(100%);
+          transform: translate(100%);
 }
 
 .header {
@@ -74,6 +76,9 @@ nav {
   bottom: 0;
   width: 70vw;
   background-color: hsl(36deg, 100%, 99%);
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .overlay__links {
   margin: 9rem 0 9rem 1.375rem;
