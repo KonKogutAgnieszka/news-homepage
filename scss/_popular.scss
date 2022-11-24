@@ -3,6 +3,9 @@
   background-color: $navy;
   color: white;
   padding: 1.375rem;
+  @include breakpoint-up(large) {
+    width: 30%;
+  }
   h2 {
     font-size: $font-lg;
     font-weight: 700;

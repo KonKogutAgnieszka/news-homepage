@@ -1,4 +1,6 @@
 .trending {
+  @include breakpoint-up(large) {
+  }
   &__article {
     margin-bottom: 2rem;
     display: flex;

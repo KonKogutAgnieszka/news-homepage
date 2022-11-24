@@ -1,33 +1,54 @@
 .new {
-  padding: 16px 0;
   display: flex;
   flex-direction: column;
-  .new__image {
+  @include breakpoint-up(large) {
+    width: 70%;
+  }
+  &__image {
     width: 100%;
-    > img {
-      width: inherit;
+    height: 18.75rem;
+    background-image: url("../assets/images/image-web-3-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include breakpoint-up(large) {
+      background-size: cover;
+      background-position: top;
     }
   }
-  .new__title {
-    font-size: $font-xxl;
-    font-weight: 800;
-    line-height: 2.5rem;
-    color: $black;
-  }
-  .new__paragraph {
-    padding: 16px 0;
-    font-size: $font-sm;
-    line-height: 1.5rem;
-  }
-  .new__button {
-    width: 185px;
-    font-size: $font-xs;
-    line-height: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-weight: 700;
-    color: $white;
-    background-color: $red;
-    border: none;
+  &__text {
+    margin-top: 2rem;
+    @include breakpoint-up(large) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title {
+      font-size: $font-xxl;
+      font-weight: 800;
+      line-height: 2.5rem;
+      color: $black;
+    }
+    &__paragraph {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 0;
+      font-size: $font-sm;
+      line-height: 1.5rem;
+      @include breakpoint-up(large) {
+        margin-left: 8rem;
+      }
+    }
+    &__button {
+      margin-top: 1.875rem;
+      width: 185px;
+      font-size: $font-xs;
+      line-height: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 700;
+      color: $white;
+      background-color: $red;
+      border: none;
+    }
   }
 }
