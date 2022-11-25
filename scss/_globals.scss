@@ -19,8 +19,15 @@ html {
   height: auto;
   padding: 1rem;
   @include breakpoint-up(large) {
+    height: 100vh;
     padding: 2.5rem 10.25rem;
   }
+}
+
+.desktop-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .hide-for-mobile {

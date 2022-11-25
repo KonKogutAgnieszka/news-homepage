@@ -25,8 +25,21 @@ html {
 }
 @media (min-width: 64em) {
   .wrapper {
+    height: 100vh;
     padding: 2.5rem 10.25rem;
   }
+}
+
+.desktop-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 63.937em) {
@@ -74,7 +87,7 @@ nav .header__logo {
 }
 nav .header__links > a {
   margin-left: 2.4rem;
-  font-size: 1.625rem;
+  font-size: 1.125rem;
   font-weight: 400;
   color: hsl(240deg, 100%, 5%);
   text-decoration: none;
@@ -148,7 +161,8 @@ nav .hamburger.open > span:last-child {
 }
 @media (min-width: 64em) {
   .new {
-    width: 70%;
+    width: 66%;
+    height: 100%;
   }
 }
 .new__image {
@@ -194,6 +208,9 @@ nav .hamburger.open > span:last-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 16px 0;
   font-size: 0.938rem;
   line-height: 1.5rem;
@@ -224,7 +241,9 @@ nav .hamburger.open > span:last-child {
 }
 @media (min-width: 64em) {
   .popular {
-    width: 30%;
+    width: 28%;
+    height: 100%;
+    margin: 0;
   }
 }
 .popular h2 {
@@ -244,6 +263,18 @@ nav .hamburger.open > span:last-child {
   font-size: 0.938rem;
 }
 
+@media (min-width: 64em) {
+  .trending {
+    margin-top: 4rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .trending__article {
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -252,7 +283,7 @@ nav .hamburger.open > span:last-child {
 }
 .trending__article__image {
   display: block;
-  height: 8.125rem;
+  height: 8rem;
 }
 .trending__article__text {
   padding-left: 1.375rem;
@@ -268,4 +299,13 @@ nav .hamburger.open > span:last-child {
   font-size: 1.125rem;
   font-weight: 700;
   color: hsl(240deg, 100%, 5%);
+}
+
+footer .attribution {
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
