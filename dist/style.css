@@ -20,26 +20,26 @@ html {
 .wrapper {
   background-color: hsl(36deg, 100%, 99%);
   width: 100%;
-  height: auto;
   padding: 1rem;
 }
 @media (min-width: 64em) {
   .wrapper {
-    height: 100vh;
-    padding: 2.5rem 10.25rem;
+    padding: 2rem 10.25rem;
   }
 }
 
-.desktop-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+@media (min-width: 64em) {
+  .desktop-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 @media (max-width: 63.937em) {
@@ -172,7 +172,7 @@ nav .hamburger.open > span:last-child {
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .new__image {
     background-size: cover;
     background-position: top;
@@ -239,6 +239,11 @@ nav .hamburger.open > span:last-child {
   color: white;
   padding: 1.375rem;
 }
+@media (min-width: 40em) {
+  .popular {
+    width: 50%;
+  }
+}
 @media (min-width: 64em) {
   .popular {
     width: 28%;
@@ -265,7 +270,7 @@ nav .hamburger.open > span:last-child {
 
 @media (min-width: 64em) {
   .trending {
-    margin-top: 4rem;
+    margin-top: 2rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

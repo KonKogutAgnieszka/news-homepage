@@ -11,7 +11,7 @@
     background-image: url("../assets/images/image-web-3-mobile.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
       background-size: cover;
       background-position: top;
     }

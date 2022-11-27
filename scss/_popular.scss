@@ -3,6 +3,9 @@
   background-color: $navy;
   color: white;
   padding: 1.375rem;
+  @include breakpoint-up(medium) {
+    width: 50%;
+  }
   @include breakpoint-up(large) {
     width: 28%;
     height: 100%;
