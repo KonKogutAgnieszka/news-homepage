@@ -25,18 +25,17 @@
   <body>
     <div class="wrapper">
       <div class="overlay fade">
-        <div class="overlay__links">
-        <a href="#">Home</a>
-        <a href="#new">New</a>
-        <a href="#popular">Popular</a>
-        <a href="#trending">Trending</a>
-        <a href="#">Categories</a>
+        <div role="navigation" class="overlay__links">
+          <a href="#">Home</a>
+          <a href="#new">New</a>
+          <a href="#popular">Popular</a>
+          <a href="#trending">Trending</a>
+          <a href="#">Categories</a>
         </div>
       </div>
       <header class="header">
         <nav>
           <img class="header__logo" src="assets/images/logo.svg" alt="" />
-
 
           <div class="header__links hide-for-mobile">
             <a href="#">Home</a>
@@ -52,57 +51,53 @@
             <span></span>
           </a>
         </nav>
-
-
       </header>
 
       <div class="desktop-container">
+        <section id="new" class="new">
+          <div class="new__image"></div>
+          <div class="new__text">
+            <h1 class="new__text__title">The Bright Future of Web 3.0?</h1>
+            <div class="new__text__paragraph">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="new__text__button">Read more</button>
+            </div>
+          </div>
+        </section>
 
-      <section id="new" class="new">
-        <div class="new__image">
-        </div>
-        <div class="new__text">
-        <h1 class="new__text__title">The Bright Future of Web 3.0?</h1>
-        <div class="new__text__paragraph">
-          <p>We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-          <button class="new__text__button">Read more</button>
-        </div>
+        <section id="popular" class="popular">
+          <h2>New</h2>
 
-       
+          <div class="popular__element">
+            <h3 class="popular__element__title">Hydrogen VS Electric Cars</h3>
+            <p class="popular__element__paragraph">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+
+          <div class="popular__element">
+            <h3 class="popular__element__title">
+              The Downsides of AI Artistry
+            </h3>
+            <p class="popular__element__paragraph">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+
+          <div class="popular__element">
+            <h3 class="popular__element__title">Is VC Funding Drying Up?</h3>
+            <p class="popular__element__paragraph">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
       </div>
-      </section>
-
-      <section id="popular" class="popular">
-        <h2>New</h2>
-
-        <div class="popular__element">
-          <h3 class="popular__element__title">Hydrogen VS Electric Cars</h3>
-          <p class="popular__element__paragraph">
-            Will hydrogen-fueled cars ever catch up to EVs?
-          </p>
-        </div>
-
-        <div class="popular__element">
-          <h3 class="popular__element__title">The Downsides of AI Artistry</h3>
-          <p class="popular__element__paragraph">
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-        </div>
-
-        <div class="popular__element">
-          <h3 class="popular__element__title">Is VC Funding Drying Up?</h3>
-          <p class="popular__element__paragraph">
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
-        </div>
-      </section>
-
-    </div>
 
       <section id="trending" class="trending">
         <div class="trending__article">
@@ -143,18 +138,17 @@
             How the pandemic has sparked fresh opportunities.
           </div>
         </div>
-  
       </section>
 
       <footer>
-      <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/KonKogutAgnieszka">Agnieszka Koń Kogut</a>.
+        >. Coded by
+        <a href="https://github.com/KonKogutAgnieszka">Agnieszka Koń Kogut</a>.
       </footer>
     </div>
-    
-    <script type="text/javascript" src="app/main.js"></script>
+
+    <script src="app/main.js"></script>
   </body>
 </html>
